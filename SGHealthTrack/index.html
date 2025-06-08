@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SG HealthTrack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="logo">
+        <div class="heart">&#10084;</div>
+      </div>
+      <h2>SG HealthTrack</h2>
+      <p>Clinic Management System</p>
+      <form method="POST" action="php/login.php">
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Enter your username" required>
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <button type="submit">Sign In</button>
+      </form>
+      <a href="#" class="forgot">Forgot your password?</a>
+      
+      <div class="signup-links">
+        <p>Don't have an account? <a href="signup.html">Create Account</a></p>
+      </div>
+      
+      <div class="demo">
+        <strong>Demo Credentials:</strong><br>
+        Username: <code>admin</code><br>
+        Password: <code>Password123</code>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .signup-links {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .signup-links a {
+      color: #14b8a6;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .signup-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</body>
+</html>
